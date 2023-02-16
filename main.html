@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Currículo</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    
+    <body>
+        <nav class="menu">
+            <ul>
+                <li><a href="#quem">QUEM SOU</a></li>
+                <li><a href="#path">TRAJETÓRIA</a></li>
+                <li><a href="#goal">OBJETIVOS</a></li>
+                <li><a href="#curr">CURRÍCULO</a></li>
+                <li><a href="#cont">CONTATO</a></li>
+            </ul>
+        </nav>
+
+        <section id="quem">
+            <h2>Quem sou</h2>
+            <table>
+                <tr>
+                    <td><img height="200" width="150" src="./profile1.png"></img></td>
+                    <td><div class="line"></div></td>
+                    <td>
+                        <p>Chamo-me Alexandre Batista Leal, nasci em 27/09/2005, logo, tenho 17 anos de idade, moro com meus pais, Alexandre e Maria, e tenho um irmão com três anos a menos do que eu.</p>
+                        <p>No que diz respeito a minha pessoa aprecio muito as implicações da engenharia sobre o dia a dia das pessoas, embora eu não entenda muito de suas definições é um campo do meu interesse.</p>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="path">
+            <h2>Trajetória</h2>
+            <h3>Profissional</h3>
+            <p>Minhas experiências profissionais são limitadas ao meu âmbito familiar, sendo elas dentre a empresa de meus pais. A empresa trabalhando com a fabricação e distribuição de gelo, onde acompanho o processo de produção, entrega e manutenção.</p>
+            <p>Além disso, já pude acompanhar serviços em uma eletrônica, embora não tenha trabalhado com nenhum conserto de forma direta, agreguei conhecimentos práticos dentre a identificação de problemas em um cicuito elétrico, assim como a importância de manter uma estação de trabalho limpa e organizada, e os cuidados com o manuseio e operação com os equipamentos, da empresa, e do cliente, em vista não apenas de seus valores, mas também das responsabilidades com ambos.</p>
+            <h3>Acadêmica</h3>
+            <p>Estou cursando o curso técnico em eletrotécnica no Instituto federal de educação, ciência e tecnologia desde 2021, sendo aluno do 5° período dentre seis.</p>
+            <p>Nos anos antriores a isso vivênciei ambos ambitôs, público e privado, de ensino, no entanto foram os dois últimos anos do ensino fundamental os mais marcantes, logo que tive amplo contato com elementos educacionais quanto plataformas digitais, programação e robótica.</p>
+            <p>Fora o âmbito escolar estou em processo de finalização de um curso de língua inglesa, com previsão de 3 meses para finalização e emissão de certificado.</p>
+        </section>
+
+        <section id="goal">
+            <h2>Objetivos</h2>
+            <p>Exige a instituição de ensino a qual estou vinculado, o cumprimento de 120 horas de estágio obrigatório, sendo este o príncipio do meu contato. Desta forma, espero poder contribuir com o desenvolvimento da Suprimed, e agregar conhecimentos e experiências à minha vida profissional e acadêmica.</p>
+        </section>
+
+        <section id="curr">
+            <h2>Currículo</h2>
+            <a onclick="Speak('curr')">-> Abrir currículo</a>
+        </section>
+
+        <section id="cont">
+            <h2>Contato</h2>
+            <h3>Telefone:</h3>
+            <a onclick="Speak('cont')">(67) 99934-2670</a>
+            <h3>Email:</h3>
+            <a onclick="Speak('email')">ableal315@gmail.com</a>
+        </section>
+
+        <footer>
+            <p>&copy; <a onclick="Speak('author')">https://github.com/erdnaxelA2</a></p>
+        </footer>
+
+        <!-- morse: .- .-.. . -..- .- -. -.. .-. .--> 
+
+        <script type="text/javascript" src="worker.js"></script>
+        <script>
+            function Speak(text) {
+                if (text == 'cont') {
+                    window.open("./cont.jpeg");;
+                } else if (text == 'email') {
+                    window.open("https://www.gmail.com");;
+                } else if (text == 'curr') {
+                    window.open("./ALEXANDRE_CURRICULO.pdf");;
+                } else if (text == 'data') {
+                    alert("Nesse dia");
+                } else if (text == 'city') {
+                    window.open("https://www.google.com/maps/place/Campo+Grande,+MS/@-20.4810437,-54.7756201,11z/data=!3m1!4b1!4m5!3m4!1s0x9486e6726b2b9f27:0xf5a8469ebc84d2c1!8m2!3d-20.4697105!4d-54.6201211");;
+                } else if (text == 'pixar') {
+                    window.open('https://www.pixar.com/');
+                } else if (text == 'moro') {
+                    alert("?")
+                } else if (text == 'lugar') {
+                    window.open('https://www.google.com.br/maps/@-15.8001984,-47.8642154,2a,75y,273.69h,62.35t/data=!3m6!1e1!3m4!1sm31xI3TeyUWZxUvExE6WYQ!2e0!7i13312!8i6656?hl=pt-BR');
+                } else {
+                    window.open('https://github.com/erdnaxelA2')
+                }
+            }
+        </script>
+    </body>
+</html>
