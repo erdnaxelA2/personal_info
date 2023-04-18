@@ -1,98 +1,276 @@
 <!DOCTYPE html>
-<html lang="pt">
-
-    <head>
-        <meta charset="utf-8">
-        <title>Currículo</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    
-    <body>
-        <nav class="menu">
-            <ul>
-                <li><a href="#quem">QUEM SOU</a></li>
-                <li><a href="#path">TRAJETÓRIA</a></li>
-                <li><a href="#goal">OBJETIVOS</a></li>
-                <li><a href="#curr">CURRÍCULO</a></li>
-                <li><a href="#cont">CONTATO</a></li>
-            </ul>
-        </nav>
-
-        <section id="quem">
-            <h2>Quem sou</h2>
-            <table>
-                <tr>
-                    <td><img height="200" width="150" src="./profile1.png"></img></td>
-                    <td><div class="line"></div></td>
-                    <td>
-                        <p>Chamo-me Alexandre Batista Leal, nasci em 27/09/2005, logo, tenho 17 anos de idade, moro com meus pais, Alexandre e Maria, e tenho um irmão com três anos a menos do que eu.</p>
-                        <p>No que diz respeito a minha pessoa aprecio muito as implicações da engenharia sobre o dia a dia das pessoas, embora eu não entenda muito de suas definições é um campo do meu interesse.</p>
-                    </td>
-                </tr>
-            </table>
-        </section>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO</title>
+    <style>
+        footer {
+            text-align: center;
+            bottom: 0;
+        }
+        table {
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+        td {
+            padding: 7px;
+            text-align: left;
+        }
+        img {
+            border: 1px solid black;
+            max-width: 180px;
+            max-height: 250px;
+        }
+        .main {
+            margin: auto;
+            width: 70%;
+        }
+        .itens {
+            width: 100%;
+        }
+        .item {
+            border-bottom: 1px solid black;
+        }
+        .item > td {
+            padding: 0px;
+        }
         
-        <section id="path">
-            <h2>Trajetória</h2>
-            <h3>Profissional</h3>
-            <p>Minhas experiências profissionais são limitadas ao meu âmbito familiar, sendo elas dentre a empresa de meus pais. A empresa trabalhando com a fabricação e distribuição de gelo, onde acompanho o processo de produção, entrega e manutenção.</p>
-            <p>Além disso, já pude acompanhar serviços em uma eletrônica, embora não tenha trabalhado com nenhum conserto de forma direta, agreguei conhecimentos práticos dentre a identificação de problemas em um cicuito elétrico, assim como a importância de manter uma estação de trabalho limpa e organizada, e os cuidados com o manuseio e operação com os equipamentos, da empresa, e do cliente, em vista não apenas de seus valores, mas também das responsabilidades com ambos.</p>
-            <h3>Acadêmica</h3>
-            <p>Estou cursando o curso técnico em eletrotécnica no Instituto federal de educação, ciência e tecnologia desde 2021, sendo aluno do 5° período dentre seis.</p>
-            <p>Nos anos antriores a isso vivênciei ambos ambitôs, público e privado, de ensino, no entanto foram os dois últimos anos do ensino fundamental os mais marcantes, logo que tive amplo contato com elementos educacionais quanto plataformas digitais, programação e robótica.</p>
-            <p>Fora o âmbito escolar estou em processo de finalização de um curso de língua inglesa, com previsão de 3 meses para finalização e emissão de certificado.</p>
-        </section>
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+            background-color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+        }
+        .collapsible:hover {background-color: #D6EEEE;}
 
-        <section id="goal">
-            <h2>Objetivos</h2>
-            <p>Exige a instituição de ensino a qual estou vinculado, o cumprimento de 120 horas de estágio obrigatório, sendo este o príncipio do meu contato. Desta forma, espero poder contribuir com o desenvolvimento da Suprimed, e agregar conhecimentos e experiências à minha vida profissional e acadêmica.</p>
-        </section>
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+        }
 
-        <section id="curr">
-            <h2>Currículo</h2>
-            <a onclick="Speak('curr')">-> Abrir currículo</a>
-        </section>
+</style>
+</head>
+<body>
+    <table class="main">
+        <tbody>
+            <tr>
+                <td>
+                    <table class="itens">
+                        <tr>
+                            <td>
+                                <img src="./profile1.png">
+                            </td>
+                            <td>
+                                <h2>Alexandre Batista Leal</h2>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <p>Idade:</p>
+                                        </td>
+                                        <td>
+                                            <p>17 anos (27/09/2005)</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Endereço:</p>
+                                        </td>
+                                        <td>
+                                            <p>Rua Luís Góes, Jardim Itatiaia, 07</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>Contatos:</p>
+                                        </td>
+                                        <td>
+                                            <a id="phone" href=""><p>(67) 999342670</p></a>
+                                            <a id="email" href=""><p>ableal315@gmail.com</p></a>
+                                        </td>
+                                    </tr>
+                                </table>
 
-        <section id="cont">
-            <h2>Contato</h2>
-            <h3>Telefone:</h3>
-            <a onclick="Speak('cont')">(67) 99934-2670</a>
-            <h3>Email:</h3>
-            <a onclick="Speak('email')">ableal315@gmail.com</a>
-        </section>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table class="itens">
+                        <tr class="item">
+                            <td>
+                                <button type="button" class="collapsible"><p><span>&#8594;</span>FORMAÇÃO</p></button>
+                                <div class="content">
+                                    <h4>
+                                        Escola Curumim — primário, 1°, 2° e 3°
+                                    </h4>
+                                    <p>
+                                        2009 - 2014
+                                    </p>
+                                    <h4>
+                                        FUNLEC - Colégio Oswaldo Tognini — 4° e 5°
+                                    </h4>
+                                    <p>
+                                        2015 - 2016
+                                    </p>
+                                    <h4>
+                                        Escola municipal profª Oliva Enciso — 5° e 6°
+                                    </h4>
+                                    <p>
+                                        2016 - 2017
+                                    </p>
+                                    <h4>
+                                        Wizard - Curso de língua estrangeira Inglês
+                                    </h4>
+                                    <p>
+                                        2016 - 2023
+                                    </p>
+                                    <h4>
+                                        Escola do SESI — 7°, 8° e 9°
+                                    </h4>
+                                    <p>
+                                        2018 - 2020
+                                    </p>
+                                    <h4>
+                                        IFMS - Instituto federal de educação, ciência e tecnologia
+                                        de Mato Grosso do Sul — 1°, 2° e 3°
+                                    </h4>
+                                    <p>
+                                        2021 -
+                                    </p>
+                                    
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="item">
+                            <td>
+                                <button type="button" class="collapsible"><p><span>&#8594;</span>COMPETÊNCIAS</p></button>
+                                <div class="content">
+                                    <h3>Técnicas</h3>
+                                    <ul>
+                                        <li>
+                                            Utilizar aparelhos de medição;
+                                        </li>
+                                        <li>
+                                            Identificar componentes (eletrônicos, proteção, distribuição);
+                                        </li>
+                                        <li>
+                                            Trabalhar com projetos elétricos residenciais;
+                                        </li>
+                                        <li>
+                                            Trabalhar com circuitos eletrônicos e *microcontrolados;
+                                        </li>
+                                        <li>
+                                            Utilizar recursos digitais (planilhas, apresentações, vídeos);
+                                        </li>
+                                        <li>
+                                            Trabalhar com códigos nas linguagens C/C++ e Python;
+                                        </li>
+                                    </ul>
+                                    <p>* Ao que diz respeito a circuitos microcontrolados, trato apenas de noções básicas de hardware, empregues dentre plataformas de desenvolvimento como o Arduino;</p>
+                                    <h3>Pessoais</h3>
+                                    <ul>
+                                        <li>
+                                            Organição
+                                        </li>
+                                        <li>
+                                            Proatividade
+                                        </li>
+                                        <li>
+                                            Curiosidade
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="item">
+                            <td>
+                                <button type="button" class="collapsible"><p><span>&#8594;</span>OBJETIVOS</p></button>
+                                <div class="content">
+                                    <p>
+                                        A instituição de ensino a qual estou, atualmente, vinculado, exige o cumprimento de 120 horas 
+                                        de estágio obrigatório, para conclusão do curso, sendo esse o príncipio do meu contato. 
+                                        Desta forma, espero poder contribuir com o desenvolvimento de sua empresa, no emprego dos 
+                                        conteúdos a mim ensinados, e agregar conhecimentos e experiências à minha vida profissional e acadêmica.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="item">
+                            <td>
+                                <button type="button" class="collapsible"><p><span>&#8594;</span>EXPERIÊNCIAS</p></button>
+                                <div class="content">
 
-        <footer>
-            <p>&copy; <a onclick="Speak('author')">https://github.com/erdnaxelA2</a></p>
-        </footer>
+                                    <h3>Gelos Polar</h3>
+                                    <span>Desde de 2017</span>
+                                    <p>
+                                        Empresa familiar, fábrica e distribuidora de gelo, a qual
+                                        desempenho funções dentre as divisões de entrega, fabricação e
+                                        manutenção.    
+                                    </p>
+                                    <h3>CONCEL</h3>
+                                    <span>De Agosto à Dezembro de 2022</span>
+                                    <p>
+                                        Empresa de manutenção de dispositivos eletrônicos, não
+                                    desempenhei papel ativo, no entanto aprendi a me organizar e ter
+                                    uma postura diante do meio profissional.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <p>&copy; <a href="https://github.com/erdnaxelA2">https://github.com/erdnaxelA2</a></p>
+    </footer>
 
-        <!-- morse: .- .-.. . -..- .- -. -.. .-. .--> 
+</body>
+<script>
+    var PHONE = "https://api.whatsapp.com/send/?phone=5567999342670&text&type=phone_number&app_absent=0"
+    var EMAIL = "mailto:ableal315@gmail.com"
+    var FILE = "./ALEXANDRE_CURRICULO.pdf"
 
-        <script type="text/javascript" src="worker.js"></script>
-        <script>
-            function Speak(text) {
-                if (text == 'cont') {
-                    window.open("./cont.jpeg");;
-                } else if (text == 'email') {
-                    window.open("https://www.gmail.com");;
-                } else if (text == 'curr') {
-                    window.open("./ALEXANDRE_CURRICULO.pdf");;
-                } else if (text == 'data') {
-                    alert("Nesse dia");
-                } else if (text == 'city') {
-                    window.open("https://www.google.com/maps/place/Campo+Grande,+MS/@-20.4810437,-54.7756201,11z/data=!3m1!4b1!4m5!3m4!1s0x9486e6726b2b9f27:0xf5a8469ebc84d2c1!8m2!3d-20.4697105!4d-54.6201211");;
-                } else if (text == 'pixar') {
-                    window.open('https://www.pixar.com/');
-                } else if (text == 'moro') {
-                    alert("?")
-                } else if (text == 'lugar') {
-                    window.open('https://www.google.com.br/maps/@-15.8001984,-47.8642154,2a,75y,273.69h,62.35t/data=!3m6!1e1!3m4!1sm31xI3TeyUWZxUvExE6WYQ!2e0!7i13312!8i6656?hl=pt-BR');
+    var itens = document.querySelectorAll(".collapsible");
+    var contents = document.querySelectorAll(".content");
+    var email = document.querySelector("#email");
+    var phone = document.querySelector("#phone");
+    document.addEventListener("DOMContentLoaded", function() {
+        email.href = EMAIL;
+        phone.href = PHONE;
+        alert("Olá, seja bem vindo ao meu portifólio online!");
+        if (window.confirm("Gostaria de baixar meu Currículo?")) {
+            var a = document.createElement("a");
+            a.target = "_blank";
+            a.href = FILE;
+            a.click();
+        }
+    })
+    for(item of itens) {
+        item.addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            for(var i=0; i<contents.length; i++) {
+                if (content === contents[i]) {
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
                 } else {
-                    window.open('https://github.com/erdnaxelA2')
+                    contents[i].style.display = "none";
                 }
             }
-        </script>
-    </body>
+        })
+    }
+</script>
 </html>
