@@ -238,7 +238,7 @@
 <script>
     var PHONE = "https://api.whatsapp.com/send/?phone=5567999342670&text&type=phone_number&app_absent=0"
     var EMAIL = "mailto:ableal315@gmail.com"
-    var FILE = "https://drive.google.com/file/d/1vU-AqcGNEjZy014GF1OnWDqSub3KcWbq/view?usp=drivesdk"
+    // var FILE = "https://drive.google.com/file/d/1vU-AqcGNEjZy014GF1OnWDqSub3KcWbq/view?usp=drivesdk"
 
     var itens = document.querySelectorAll(".collapsible");
     var contents = document.querySelectorAll(".content");
@@ -251,7 +251,7 @@
         if (window.confirm("Gostaria de baixar meu Currículo?")) {
             var a = document.createElement("a");
             a.target = "_blank";
-            a.href = FILE;
+            a.href = "./curiculum.html";
             a.click();
         }
     })
